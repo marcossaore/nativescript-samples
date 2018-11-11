@@ -5,11 +5,11 @@ you can access this presentation here [Nativescript presentation](https://drive.
 
 [**see demonstration here**](https://play.nativescript.org/?template=play-tsc&id=tjXk2q&v=4)
 
-### Nativescript
-This presentation covers 
-[Nativescript Book](https://www.nativescript.org/get-the-nativescript-book)
-[How Nativescript works?](https://developer.telerik.com/featured/nativescript-works/)
-[Core Concepts](https://docs.nativescript.org/core-concepts/modules)
-[Getting started with Nativescript](https://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/ListView/overview)
+##Nativescript
+###This presentation covers 
+* [Nativescript Book](https://www.nativescript.org/get-the-nativescript-book)
+* [How Nativescript works?](https://developer.telerik.com/featured/nativescript-works/)
+* [Core Concepts](https://docs.nativescript.org/core-concepts/modules)
+* [Getting started with Nativescript](https://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/ListView/overview)
  
 
