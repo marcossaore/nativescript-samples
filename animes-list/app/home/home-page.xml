@@ -1,0 +1,55 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd"
+    xmlns:lv="nativescript-ui-listview" actionBarHidden="true">
+    <lv:RadListView items="{{animes}}" class="list-group" swipeActions="true"
+        loadOnDemandMode="Auto" loadMoreDataRequested="{{onLoadMoreItemsRequested}}">
+        <lv:RadListView.ListViewLayout>
+            <lv:ListViewGridLayout scrollDirection="
+        Vertical"
+                itemHeight="20" itemInsertAnimation="Scale" spanCount="3" />
+        </lv:RadListView.ListViewLayout>
+
+        <lv:RadListView.loadOnDemandItemTemplate>
+            <GridLayout style="background-color: #7fff7f;">
+                <Label text="Load More" horizontalAlignment="center"
+                    verticalAlignment="center" />
+            </GridLayout>
+        </lv:RadListView.loadOnDemandItemTemplate>
+
+        <lv:RadListView.itemTemplate>
+            <GridLayout rows="auto,auto, auto" columns="*" backgroundColor="#f4f4f4"
+                class="m-b-20">
+                <Image verticalAlignment="center" row="0" col="0" src="{{image_url}}" />
+                <StackLayout row="1" col="0" class="m-15">
+                    <Label text="{{canonicalTitle}}" class="h2 font-weight-bold"
+                        textWrap="true" />
+                    <Label class="m-b-10" text="{{synopsis}}" textWrap="true"
+                        style="line-height: 5" class="label" />
+                    <GridLayout class="m-t-10 text-center" rows="*" columns="*,2*,*"
+                        row="2" col="0">
+                        <StackLayout verticalAlignment="center" orientation="vertical"
+                            col="0">
+                            <Label class="fa label" style="font-size: 30"
+                                text="&#xf02e;" />
+                            <Label verticalAlignment="center" class=" font-weight-bold"
+                                text="{{episodeCount + ' Episodes'}}" textWrap="true" />
+                        </StackLayout>
+                        <StackLayout verticalAlignment="center" orientation="vertical"
+                            col="1">
+                            <Label class="fa label" style="font-size: 30"
+                                text="&#xf164;" />
+                            <Label verticalAlignment="center" class="m-l-10 font-weight-bold"
+                                text="{{'Ranking: ' + ranking }}" />
+                        </StackLayout>
+                        <StackLayout verticalAlignment="center" orientation="vertical"
+                            col="2">
+                            <Label class="fa label" style="font-size: 30"
+                                text="&#xf0b0;" />
+                            <Label verticalAlignment="center" class="m-l-10 font-weight-bold"
+                                text="{{ageRatingGuide}}" textWrap="true" />
+                        </StackLayout>
+                    </GridLayout>
+                </StackLayout>
+            </GridLayout>
+        </lv:RadListView.itemTemplate>
+    </lv:RadListView>
+</Page>
