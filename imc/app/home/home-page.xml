@@ -1,0 +1,16 @@
+<Page loaded="pageLoaded" class="page" style="clip-path: polygon(100% 76%, 0 100%, 100% 100%); background-color: blueviolet"
+ xmlns="http://www.nativescript.org/tns.xsd">
+
+	<ActionBar title="Calculadora de IMC" class="action-bar action-cor">
+	</ActionBar>
+
+	<ScrollView>
+		<GridLayout rows="auto, auto, auto, auto" columns="*" verticalAlignment="top" class="p-20 m-t-20">
+			<TextField hint="Peso (KG)" text="{{weight}}" row="0" col="0" class="m-b-5" keyboardType="number"></TextField>
+			<TextField hint="Altura (KG)" text="{{height}}" row="1" col="0" class="m-b-5" keyboardType="number" returnPress="{{calcularImc}}"
+			 returnKeyType="done"></TextField>
+			<Button text="Calcular" tap="{{calcularImc}}" row="2" col="0" class="btn-calc m-t-10"></Button>
+			<Label fontSize="16" textWrap="true" text="{{info || 'Informe seu peso e altura!'}}" row="3" col="0" class="text-center font-weight-bold m-t-10"></Label>
+		</GridLayout>
+	</ScrollView>
+</Page>
