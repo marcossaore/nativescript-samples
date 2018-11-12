@@ -4,7 +4,7 @@ Animes List is amazing app made by Nativescript, it will helps you make your app
 
 ### Preview
 
-![](./app/images/Screenshot_20181111-155329.png?v=4&s=200)}
+![](./app/images/Screenshot_20181111-155329.png =100x20)}
 
 ![](./app/images/Screenshot_20181111-155342.png)
 
