@@ -5,7 +5,7 @@ you can access this presentation here [Nativescript presentation](https://drive.
 
 
 ### Preview
-![](./app/images/Screenshot_20181111-153849.png)
+<img src="./app/images/Screenshot_20181111-153849.png" width="400px" height="700px"/><br/>
 
 [**see demonstration here**](https://play.nativescript.org/?template=play-tsc&id=tjXk2q&v=4)
 
